@@ -1,0 +1,398 @@
+*{
+    font-family: 'Jost', sans-serif;
+margin: auto;
+padding: 0;
+
+text-align: center;
+}
+.scrollable-element {
+  scrollbar-color: red yellow;
+}
+header{
+    height: 50px;
+
+    
+}
+header .navBar{
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 29, 238);
+    display: flex;
+    justify-content: space-around;
+ 
+    flex-direction: row;
+}
+
+header .navBar .logo img{
+height: 25px;
+}
+header .navBar .logo{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    
+
+}
+header .navBar .logo p{
+    margin-left: 5px;
+
+font-weight: 500;}
+header .navBar .navLinks{
+    display: none;
+
+}
+header .navBar .navLinks ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header .navBar .navLinks ul li{
+    margin: auto 10px;
+}
+header .navBar .navLinks ul li a{
+    text-transform: uppercase;
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+}
+header .navBar .navRight{
+ display: flex;
+ justify-content: space-between;
+ 
+    flex-direction: row;
+}
+header .navBar .navRight a{ padding: 8px 10px; 
+    text-decoration: none;
+color: black;
+    border: 1px solid #ffc600; margin: 5px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px;
+}
+header .navBar .navRight .menuIcon img{
+    height: 17px;
+    
+margin-right: 5px;
+}
+
+ 
+
+.home{
+
+}
+.home img{
+    margin: 10px auto;
+}
+
+.home .homeText{
+    line-height: 1.7rem;
+    width: 95%;
+}
+.home .homeText h3::after {
+    content: ' ';
+    margin: auto;
+    display: block;
+    background-color: #d30000;
+    height: 3px;
+    width: 50%;
+}
+.home .homeText p{
+    margin: 20px auto;
+    color: #7a8292;
+}
+.home .homeText h1{
+    margin: 10px;
+    font-size: 2rem;
+}.home .homeText  a{
+    padding: 8px 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ffc600;
+    margin: 10px auto;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.containAll{
+    margin: 20px auto;
+  
+
+}
+.containAll .bigCard{
+    height: 20rem;  border-radius: 3px;
+
+    background-color: #0075c7; object-fit:contain;
+     overflow: hidden;
+    margin: 10px;
+}
+.containAll .contailSmall{
+   
+display: flex;
+flex-direction: column;
+ border-radius: 3px;
+
+   
+    margin: 10px;
+       
+  
+}
+.containAll .contailSmall .small{
+ background-color: yellow;
+       height: 20rem; object-fit:contain;
+     overflow: hidden;
+    margin: 10px;
+      border-radius: 3px;
+}
+.smallDash{
+    display: flex;
+flex-direction: column;
+       
+
+}
+.smallDash .dash h4{
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+font-size: 1.3rem;
+color: #7a8292;
+}
+.smallDash .dash{
+    box-shadow: 0px 0px 9px 1px rgba(122,130,146,0.42);
+-webkit-box-shadow: 0px 0px 9px 1px rgba(122,130,146,0.42);
+-moz-box-shadow: 0px 0px 9px 1px rgba(122,130,146,0.42);
+ 
+    height: 6rem;
+    border-radius: 3px;
+    margin: 10px;
+    -webkit-border-radius: 1px solid #7a8292 ;
+    -moz-border-radius: 1px solid #7a8292 ;
+    -ms-border-radius: 1px solid #7a8292 ;
+    -o-border-radius: 1px solid #7a8292 ;
+}
+
+
+.firstCards::after {
+    content: ' ';
+    margin: auto;
+    display: block;
+    background-color: #d30000;
+    height: 3px;
+    width: 50%;
+}
+.cards{
+    height: 600px;
+}
+
+
+/*Media querry for pads*/
+
+
+
+@media screen and (min-width: 750px){
+
+header{
+    height: 5rem;
+
+    
+}
+
+header .navBar .navLinks{
+    display: contents;
+
+}
+
+header .navBar .navRight .menuIcon img{
+    height: 17px;
+    
+margin-right: 5px;
+display: none;
+}
+
+.home .homeText h1{
+    text-transform: uppercase;
+    margin: 30px;
+    font-size: 2.5rem;
+    
+}
+.home .homeText a
+{
+    padding: 10px 30px;
+}
+.containAll{
+    height: 60rem;
+    
+margin: 20px auto;
+
+}
+.containAll .bigCard{
+    height: 50%; 
+    width: 100%;
+    margin: auto;
+}
+
+.containAll .contailSmall{
+   
+    height: 50%;
+display: flex;
+flex-direction: row;    
+   
+  
+}
+
+.containAll .contailSmall .small{
+ background-color: yellow;
+ 
+       height: 100%;
+       width: 50%;
+       
+    
+      border-radius: 3px;
+}
+
+
+.smallDash{
+    display: flex;
+margin: 30px auto;
+width: 100%;
+       flex-direction: row;
+
+}
+
+.smallDash .dash{
+ width: 20%;
+    height: 4rem;
+    border-radius: 3px;
+    margin: 2.5% ;
+}
+
+}
+
+
+
+
+
+
+/*Media querry for laptops*/
+
+@media  screen and (min-width: 1150px) {
+
+
+header{
+    height: 6rem;
+
+    
+}
+header .navBar{
+    background-color: transparent;
+}
+
+header .navBar .logo img{
+height: 45px;
+}
+header .navBar .logo p{
+    margin-left: 5px;
+    text-transform: uppercase;
+font-size: 1.5rem;
+font-weight: 900;}
+
+header .navBar .navRight a{ padding: 10px 30px; 
+    text-decoration: none;
+color: black;
+    border: 1px solid #ffc600; margin: 5px; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px;
+}
+.home{
+    height: 90vh;
+    position: relative;
+    
+}
+.home img{
+   height: 80%;
+   position: relative;
+   width: 50%;
+
+   margin-top: 5%;
+}
+.home .homeText{
+    width: 50%;
+
+  text-align: left;
+    height: 100%;
+    float: right;
+position: relative;
+}
+.home .homeText  p{
+  text-align: left;   position:absolute;
+   margin-top: 40% ;
+   font-size: 1.5rem;
+   width: 90%;
+}
+.home .homeText  h3{
+  text-align: left;position:absolute; margin-top: 30% ;font-size: 1.8rem;
+}
+
+.home .homeText h3::after {
+    content: ' ';
+    margin: 15px 5px;
+    display: block;
+    background-color: #d30000;
+    height: 3px;
+    width: 80%;
+}
+
+.home .homeText  a{
+   margin-top:  50%;
+}
+
+
+.home .homeText h1{
+position:absolute;
+
+    text-transform: uppercase;
+  text-align: left;
+  margin: 20% auto;
+
+    font-size: 3.5rem;
+    
+}
+.home .homeText a
+{position:absolute;
+  
+    padding: 10px 30px;
+  text-align: left;
+
+}
+.firstCards{
+    width: 80%;
+    margin: auto;
+    height: 500px;
+}
+.firstCards .containAll{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.firstCards .containAll .bigCard{
+    width: 50%;
+    height: 100%;
+}
+.firstCards .containAll .contailSmall .small{
+    height: 100%;
+    
+    width: 100%;
+}
+.firstCards .containAll .contailSmall {
+width: 50%;
+height: 50%;
+margin:  auto;
+}
+.smallDash{
+    width: 80%;
+    margin: 60px auto;
+}
+}
