@@ -1,6 +1,6 @@
 var Name = document.getElementById('OS');
 var userAgent = navigator.userAgent.toLowerCase();
-var Android = userAgent.indexOf("android") > -1;
+var Android = userAgent.indexOf("android") != -1;
 if (navigator.appVersion.indexOf("Win") != -1)
     Name.innerHTML = "Windows OS";
 if (navigator.appVersion.indexOf("Mac") != -1)
