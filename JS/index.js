@@ -1,1 +1,9 @@
-alert(navigator.appVersion);
+var Name = document.getElementById('OS');
+if (navigator.appVersion.indexOf("Win") != -1)
+    Name.innerHTML = "Windows OS";
+if (navigator.appVersion.indexOf("Mac") != -1)
+    Name.innerHTML = "Mac OS";
+if (navigator.appVersion.indexOf("X11") != -1)
+    Name.innerHTML = "Arch Linux";
+if (navigator.appVersion.indexOf("Linux") != -1)
+    Name.innerHTML = "Linux OS";
