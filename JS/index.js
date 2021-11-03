@@ -1,1 +1,1 @@
-const
+alert(navigator.appVersion);
