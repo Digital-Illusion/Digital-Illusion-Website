@@ -7,3 +7,5 @@ if (navigator.appVersion.indexOf("X11") != -1)
     Name.innerHTML = "Arch Linux";
 if (navigator.appVersion.indexOf("Linux") != -1)
     Name.innerHTML = "Linux OS";
+if (navigator.appVersion.indexOf("android") != -1)
+    Name.innerHTML = "Android OS";
